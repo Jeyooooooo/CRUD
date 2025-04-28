@@ -13,15 +13,14 @@
 
     <?php require_once 'process.php'; ?>
 
-    <?php 
-        if (isset($_SESSION['message'])): ?>
-    
-    <div class="alert alert-<?=$_SESSION['msg_type']?> text-center font-weight-bold">
-        <?php 
-            echo($_SESSION['message']);
-            unset($_SESSION['message']);
+    <?php
+    if (isset($_SESSION['message'])): 
         ?>
-    </div>
+          <div class="alert alert-<?= $_SESSION['msg_type'] ?> alert-dismissible fade show custom-alert" role="alert">
+            <?= $_SESSION['message']; unset($_SESSION['message']); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <?php endif; ?>
 
     <?php endif ?>
 
