@@ -22,8 +22,6 @@
           </div>
         <?php endif; ?>
 
-    <?php endif ?>
-
     <div class="container">
     <?php
         #$mysqli = new mysqli('sql210.infinityfree.com', 'if0_38852474', 'crudActBGN', 'if0_38852474_crud') or die(mysqli_error($mysqli));
