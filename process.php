@@ -3,7 +3,7 @@
 session_start();
 
 #$mysqli = new mysqli('sql210.infinityfree.com', 'if0_38852474', 'crudActBGN', 'if0_38852474_crud') or die(mysqli_error($mysqli)); 
-$mysqli = new mysqli('localhost', 'root', '', 'db_pms') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('b916f86elluegscojytf-mysql.services.clever-cloud.com', 'utcrmjxgjmjdudmm', 'keDuenC1dFF6DD3rNqc7', 'b916f86elluegscojytf') or die(mysqli_error($mysqli));
 
 $name = '';
 $address = '';
